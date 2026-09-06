@@ -311,3 +311,34 @@ body {
 .logos-featured img {
   height: 32px;
 }
+
+.section-three {
+  padding: 9.6rem 16rem;
+  color: white;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 1.2fr 2fr;
+  background-color: #ffffff69;
+  height: 35rem;
+  border-radius: 5px;
+  box-shadow: 0 2.4rem 4.8rem rgba(rgba(255, 255, 255, 0.792));
+  background-image: linear-gradient(
+    to right top,
+    rgba(0, 0, 0, 0.651),
+    rgba(255, 255, 255, 0.568)
+  );
+
+  .cta-img-box {
+    background-image:
+      linear-gradient(
+        to right top,
+        rgba(0, 0, 0, 0.492),
+        rgba(255, 255, 255, 0.218)
+      ),
+      url("img/CTA-1.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
