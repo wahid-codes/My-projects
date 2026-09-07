@@ -306,6 +306,7 @@ body {
   height: 22px;
   justify-content: space-around;
   padding: 0 150px;
+  margin: 0;
 }
 
 .logos-featured img {
@@ -314,6 +315,7 @@ body {
 
 .section-three {
   padding: 9.6rem 16rem;
+  margin-top: -90px;
   color: white;
 }
 
@@ -323,22 +325,65 @@ body {
   background-color: #ffffff69;
   height: 35rem;
   border-radius: 5px;
-  box-shadow: 0 2.4rem 4.8rem rgba(rgba(255, 255, 255, 0.792));
   background-image: linear-gradient(
     to right top,
     rgba(0, 0, 0, 0.651),
-    rgba(255, 255, 255, 0.568)
+    rgba(60, 59, 59, 0.161)
   );
+  margin-bottom: 32px;
+  box-shadow: 0 2.4rem 4.8rem rgba(rgba(255, 255, 255, 0.792));
 
   .cta-img-box {
     background-image:
       linear-gradient(
         to right top,
-        rgba(0, 0, 0, 0.492),
-        rgba(255, 255, 255, 0.218)
+        rgba(17, 2, 2, 0.459),
+        rgba(0, 0, 0, 0.492)
       ),
       url("img/CTA-1.jpg");
     background-size: cover;
     background-position: center;
+    overflow: hidden;
+  }
+
+  .cta-text-box {
+    padding: 48px 64px 64px 64px;
+  }
+
+  .heading-secondary {
+    margin-bottom: 32px;
+  }
+
+  .cta-text {
+    line-height: 1.6;
+    margin-bottom: 90px;
+  }
+
+  .cta-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 32px;
+    row-gap: 24px;
+  }
+
+  .cta-form label {
+    color: #d4af37;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  .cta-form input {
+    height: 50%;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 3px;
+  }
+
+  .cta-form input::placeholder {
+    color: #adb5bd;
+    opacity: 1;
   }
 }
