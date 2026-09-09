@@ -1,3 +1,7 @@
+/* =========================================================
+   GENERAL
+========================================================= */
+
 * {
   margin: 0;
   padding: 0;
@@ -7,33 +11,152 @@
 body {
   font-family: Arial, sans-serif;
   background-color: black;
-  /* padding: 25px; */
 }
+
+/* =========================================================
+   TOP NAVIGATION + LOGO
+   UPDATED
+========================================================= */
+
+.main-nav {
+  width: 100%;
+  height: 80px;
+  padding: 0 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: relative;
+  z-index: 10;
+}
+
+/* Logo */
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+
+  transform: translateY(20px);
+}
+
+.nav-logo img {
+  width: 115px;
+  height: auto;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+/* Navigation list */
 
 .main-nav-list {
   display: flex;
-  gap: 40px;
+  align-items: center;
+
+  gap: 38px;
+
   list-style: none;
+
   margin: 0;
   padding: 0;
 }
 
+/* Navigation links */
+
 .main-nav-link {
+  position: relative;
+
+  display: inline-block;
+
+  padding: 10px 0;
+
+  color: #b8b8b8;
+
+  font-size: 16px;
+  font-weight: 500;
+
   text-decoration: none;
-  color: rgb(177, 174, 174);
-  font-size: 18px;
-  border-radius: 11px;
+
+  transition: color 0.3s ease;
 }
 
-.main-nav-link:link,
-.main-nav-link:visited {
-  cursor: pointer;
+/* Gold underline */
+
+.main-nav-link::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 2px;
+
+  width: 0;
+  height: 2px;
+
+  background-color: #d4af37;
+
+  transition: width 0.3s ease;
 }
 
-.main-nav-link:hover,
-.main-nav-link:active {
+.main-nav-link:hover {
   color: #d4af37;
 }
+
+.main-nav-link:hover::after {
+  width: 100%;
+}
+
+/* Active Home */
+
+.main-nav-link.active {
+  color: #d4af37;
+}
+
+.main-nav-link.active::after {
+  width: 100%;
+}
+
+/* Book a Car button */
+
+.nav-cta {
+  display: inline-block;
+
+  padding: 11px 23px;
+
+  background-color: #d4af37;
+
+  color: #111;
+
+  border-radius: 100px;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.nav-cta:hover {
+  background-color: #f0d568;
+
+  color: #111;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+}
+
+/* =========================================================
+   HERO
+========================================================= */
 
 .hero {
   height: 100vh;
@@ -65,6 +188,10 @@ body {
 .hero-text {
   width: 45%;
 }
+
+/* =========================================================
+   HERO BUTTON
+========================================================= */
 
 @keyframes moveInBottom {
   0% {
@@ -100,12 +227,12 @@ body {
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 20px#6b591d;
+  box-shadow: 0 10px 20px #6b591d;
 }
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 5px 10px#806a24;
+  box-shadow: 0 5px 10px #806a24;
 }
 
 .btn-white {
@@ -137,6 +264,10 @@ body {
   animation-fill-mode: backwards;
 }
 
+/* =========================================================
+   HERO IMAGE
+========================================================= */
+
 .hero-image {
   width: 45%;
   flex-shrink: 0;
@@ -148,6 +279,10 @@ body {
   object-fit: cover;
   border-radius: 25px;
 }
+
+/* =========================================================
+   SECTION ONE
+========================================================= */
 
 .section-one {
   padding: 100px 50px;
@@ -186,6 +321,10 @@ body {
   margin-bottom: 25px;
 }
 
+/* =========================================================
+   GRID
+========================================================= */
+
 .grid {
   display: grid;
   gap: 5.2rem;
@@ -194,6 +333,10 @@ body {
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
 }
+
+/* =========================================================
+   SECTION TWO
+========================================================= */
 
 .section-two {
   padding: 96px;
@@ -206,6 +349,10 @@ body {
   font-size: 40px;
   margin-bottom: 80px;
 }
+
+/* =========================================================
+   CARDS
+========================================================= */
 
 .car-img {
   width: 100%;
@@ -274,6 +421,10 @@ body {
   box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
 }
 
+/* =========================================================
+   FEATURED SECTION
+========================================================= */
+
 .section-three {
   padding: 4.8rem 0 3.2rem 0;
 }
@@ -299,6 +450,10 @@ body {
 .logos-featured img {
   height: 32px;
 }
+
+/* =========================================================
+   CTA
+========================================================= */
 
 .section-three {
   padding: 96px 100px 128px 100px;
@@ -342,7 +497,6 @@ body {
 
 .cta-text {
   line-height: 1.6;
-  /* margin-bottom: 90px; */
 }
 
 .cta-form {
@@ -456,6 +610,10 @@ body {
   color: #000;
   font-weight: bold;
 }
+
+/* =========================================================
+   FOOTER
+========================================================= */
 
 .footer {
   display: grid;
