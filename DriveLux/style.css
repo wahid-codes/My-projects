@@ -456,3 +456,83 @@ body {
   color: #000;
   font-weight: bold;
 }
+
+.footer {
+  display: grid;
+  padding: 128px 0;
+  color: white;
+  border-top: 1px solid #aaa;
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.footer-heading {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.footer-contact {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.address {
+  margin-bottom: 24px;
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.logo-footer {
+  width: 60%;
+  height: 60%;
+  margin-left: 100px;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.copyright {
+  margin-left: 80px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 16px;
+  color: #ffffff80;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #e2af08;
+}
