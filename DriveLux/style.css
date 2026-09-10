@@ -521,6 +521,13 @@ body {
   color: #fff;
 }
 
+.cta-form label {
+  color: #d4af37;
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
 .cta-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -529,15 +536,8 @@ body {
   padding: 9rem;
 }
 
-.cta-form label {
-  color: #d4af37;
-  display: block;
-  font-size: 1.6rem;
-  font-weight: 500;
-  margin-bottom: 1.5rem;
-}
-
 .cta-form input {
+  width: 100%;
   height: 4rem;
   padding: 1rem;
   font-size: 1.8rem;

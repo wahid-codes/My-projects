@@ -817,4 +817,61 @@
   .address {
     margin-bottom: 1.5rem;
   }
+
+  /* =========================================================
+   SMALL PHONES - 40rem and below
+========================================================= */
+
+  @media (max-width: 40rem) {
+    .main-nav-list {
+      gap: 0.8rem 1.2rem;
+    }
+
+    .main-nav-link {
+      font-size: 1.2rem;
+    }
+
+    .nav-cta {
+      padding: 0.8rem 1.2rem;
+      font-size: 1.2rem;
+    }
+
+    .header {
+      font-size: 3rem;
+    }
+
+    .hero-text p {
+      font-size: 1.5rem;
+    }
+
+    .hero-image img {
+      height: 28rem;
+    }
+
+    .section-one h2,
+    .section-two h2 {
+      font-size: 2.7rem;
+      margin-top: 8rem;
+    }
+
+    .car-img {
+      height: 21rem;
+    }
+
+    .car-title {
+      font-size: 1.2rem;
+    }
+
+    .car-attribute {
+      font-size: 1rem;
+    }
+
+    .heading-secondary {
+      font-size: 2.3rem;
+    }
+
+    .cta-text {
+      font-size: 1.4rem;
+    }
+  }
 }
