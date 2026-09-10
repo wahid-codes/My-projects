@@ -663,15 +663,12 @@ body {
 }
 
 .address {
+  font-size: 1.6rem;
   margin-bottom: 2.4rem;
   line-height: 1.4;
   color: #c4bebe;
   font-style: italic;
 }
-
-/* .grid--5-cols {
-  grid-template-columns: repeat(1, 7fr);
-} */
 
 .logo-col {
   display: flex;
@@ -692,6 +689,7 @@ body {
 .social-icon {
   width: 2.4rem;
   height: 2.4rem;
+  margin: 2rem 0 0 3rem;
 }
 
 .copyright {
