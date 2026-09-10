@@ -272,3 +272,184 @@
     font-size: 1.3rem;
   }
 }
+
+/* =========================================================
+   TABLETS - 90rem and below
+========================================================= */
+
+@media (max-width: 90rem) {
+  /* NAVIGATION */
+
+  .main-nav {
+    padding: 0 3rem;
+  }
+
+  .main-nav-list {
+    gap: 2rem;
+  }
+
+  .main-nav-link {
+    font-size: 1.4rem;
+  }
+
+  .nav-cta {
+    padding: 0.9rem 1.6rem;
+    font-size: 1.4rem;
+  }
+
+  .nav-logo img {
+    width: 9rem;
+  }
+
+  /* HERO */
+
+  .hero-content {
+    padding: 0 3rem;
+    gap: 3rem;
+  }
+
+  .hero-text {
+    width: 50%;
+  }
+
+  .header {
+    font-size: 3rem;
+  }
+
+  .hero-text p {
+    font-size: 1.7rem;
+  }
+
+  .hero-image {
+    width: 50%;
+  }
+
+  .hero-image img {
+    height: 50rem;
+  }
+
+  /* SECTION ONE */
+
+  .section-one {
+    padding: 8rem 3rem;
+  }
+
+  .section-one h2 {
+    font-size: 3.4rem;
+    margin-bottom: 5rem;
+  }
+
+  .section-one-content {
+    gap: 3rem;
+  }
+
+  .section-one-text p {
+    font-size: 1.7rem;
+  }
+
+  .section-one-image img {
+    height: 35rem;
+  }
+
+  /* FLEET */
+
+  .section-two {
+    padding: 7rem 3rem;
+  }
+
+  .section-two h2 {
+    font-size: 3.4rem;
+    margin-bottom: 5rem;
+  }
+
+  .section-two .grid {
+    width: 85%;
+    margin: 0 auto;
+    gap: 3rem;
+  }
+
+  .section-two .car {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .section-three .heading-tertiary {
+    font-size: 2rem;
+  }
+
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .car-title {
+    font-size: 1.3rem;
+  }
+
+  .car-attribute {
+    font-size: 1.2rem;
+  }
+
+  /* FEATURED LOGOS */
+
+  .logos-featured {
+    padding: 0 5rem;
+  }
+
+  .logos-featured img {
+    height: 2.5rem;
+  }
+
+  /* CTA */
+
+  .section-three {
+    padding: 7rem 3rem 9rem;
+    margin-top: 0;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .cta-img-box {
+    height: 35rem;
+  }
+
+  .cta-text-box {
+    padding: 4rem 3rem;
+  }
+
+  .cta-form {
+    padding: 4rem 1rem;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    padding: 8rem 3rem;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .logo-col {
+    grid-column: auto;
+  }
+
+  .logo-footer {
+    width: 70%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .social-links {
+    padding: 2rem 0;
+  }
+
+  .copyright {
+    margin-left: 0;
+  }
+}
